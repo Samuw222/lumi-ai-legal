@@ -1,0 +1,170 @@
+:root {
+  --bg: #f7f5f1;
+  --surface: #ffffff;
+  --ink: #1d1a2b;
+  --ink-soft: #55506b;
+  --brand: #504ace;
+  --brand-dark: #3a36a0;
+  --accent: #1fa97a;
+  --line: #e4e0d8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 2rem;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 5rem;
+}
+
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.masthead a {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--brand-dark);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.masthead a:hover {
+  color: var(--brand);
+}
+
+.masthead span {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+h1 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.5rem;
+  color: var(--ink);
+}
+
+.meta {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin-bottom: 2.75rem;
+}
+
+h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  font-size: 1.35rem;
+  color: var(--ink);
+  margin: 2.75rem 0 1rem;
+  padding-left: 0.85rem;
+  border-left: 3px solid var(--brand);
+}
+
+h3 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 1.75rem 0 0.6rem;
+}
+
+p {
+  margin: 0 0 1rem;
+  max-width: 62ch;
+}
+
+ul, ol {
+  margin: 0 0 1rem;
+  padding-left: 1.3rem;
+  max-width: 62ch;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+a {
+  color: var(--brand-dark);
+  text-decoration-color: var(--line);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+strong {
+  font-weight: 600;
+}
+
+.index-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.index-list li {
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.index-list a {
+  display: block;
+  padding: 1.1rem 0;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.1rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.index-list a:hover {
+  color: var(--brand);
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--ink-soft);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  h1 {
+    animation: rise 0.5s ease-out;
+  }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
